@@ -50,7 +50,7 @@ As we are predicting a binary output, we tested four classification modelling ap
 * Logistic Regression
 * Decision Tree
 * Random Forest
-* K Nearest Neighbours (KNN)
+* K Nearest Neighbors (KNN)
 
 For each model, we will import the data in the same way but will need to pre-process the data based up the requirements of each particular algorithm.  We will train & test each model, look to refine each to provide optimal performance, and then measure this predictive performance based on several metrics to give a well-rounded overview of which is best.
 <br>
@@ -135,11 +135,12 @@ We will build a model that looks to accurately predict *signup_flag*, based upon
 
 If that can be achieved, we can use this model to predict signup & signup probability for future campaigns.  This information can be used to target those more likely to sign-up, reducing marketing costs and thus increasing ROI.
 
-As we are predicting a binary output, we tested three classification modelling approaches, namely:
+As we are predicting a binary output, we tested four classification modelling approaches, namely:
 
 * Logistic Regression
 * Decision Tree
 * Random Forest
+* K Nearest Neighbors
 
 <br>
 # Logistic Regression <a name="logreg-title"></a>
@@ -1180,7 +1181,7 @@ There are slight differences in the order or "importance" for the remaining vari
 
 ___
 <br>
-# K Nearest Neighbours <a name="knn-title"></a>
+# K Nearest Neighbors <a name="knn-title"></a>
 
 We utlise the scikit-learn library within Python to model our data using KNN. The code sections below are broken up into 5 key sections:
 
@@ -1612,7 +1613,7 @@ ___
 
 The goal for the project was to build a model that would accurately predict the customers that would sign up for the *delivery club*.  This would allow for a much more targeted approach when running the next iteration of the campaign.  A secondary goal was to understand what the drivers for this are, so the client can get closer to the customers that need or want this service, and enhance their messaging.
 
-Based upon these, the chosen the model is the Random Forest as it was a) the most consistently performant on the test set across classication accuracy, precision, recall, and f1-score, and b) the feature importance and permutation importance allows the client an understanding of the key drivers behind *delivery club* signups.
+Based upon these, the chosen model is the Random Forest because a) its performance was mostly consistent on the test set across classication accuracy, precision, recall, and f1-score, and b) the feature importance and permutation importance allows the client an understanding of the key drivers behind *delivery club* signups.
 
 <br>
 **Metric 1: Classification Accuracy**
@@ -1650,7 +1651,7 @@ ___
 <br>
 # Application <a name="modelling-application"></a>
 
-We now have a model object, and a the required pre-processing steps to use this model for the next *delivery club* campaign.  When this is ready to launch we can aggregate the neccessary customer information and pass it through, obtaining predicted probabilities for each customer signing up.
+We now have a model object, and the required pre-processing steps to use this model for the next *delivery club* campaign.  When this is ready to launch we can aggregate the neccessary customer information and pass it through, obtaining predicted probabilities for each customer signing up.
 
 Based upon this, we can work with the client to discuss where their budget can stretch to, and contact only the customers with a high propensity to join.  This will drastically reduce marketing costs, and result in a much improved ROI.
 
@@ -1662,4 +1663,4 @@ While predictive accuracy was relatively high - other modelling approaches could
 
 We could even look to tune the hyperparameters of the Random Forest, notably regularisation parameters such as tree depth, as well as potentially training on a higher number of Decision Trees in the Random Forest.
 
-From a data point of view, further variables could be collected, and further feature engineering could be undertaken to ensure that we have as much useful information available for predicting customer loyalty
+From a data point of view, further variables could be collected, and further feature engineering could be undertaken to ensure that we have as much useful information available for predicting customer loyalty.
