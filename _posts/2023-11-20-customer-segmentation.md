@@ -158,7 +158,7 @@ K-Means is an *unsupervised learning* algorithm, meaning that it does not look t
 
 The algorithm works in a way where it partitions data-points into distinct groups (clusters) based upon their *similarity* to each other.
 
-This similarity is most often the eucliedean (straight-line) distance between data-points in n-dimensional space.  Each variable that is included lies on one of the dimensions in space.
+This similarity is most often the euclidean (straight-line) distance between data-points in n-dimensional space.  Each variable that is included lies on one of the dimensions in space.
 
 The number of distinct groups (clusters) is determined by the value that is set for "k".
 
@@ -300,7 +300,7 @@ data_for_clustering["cluster"] = kmeans.labels_
 <br>
 ### Cluster Profiling <a name="kmeans-cluster-profiling"></a>
 
-Once we have our data separated into distinct clusters, our client needs to understand *what is is* that is driving the separation.  This means the business can understand the customers within each, and the behaviours that make them unique.
+Once we have our data separated into distinct clusters, our client needs to understand *what* is driving the separation.  This means the business can understand the customers within each, and the behaviours that make them unique.
 
 <br>
 ##### Cluster Sizes
@@ -322,12 +322,12 @@ Running that code shows us that the three clusters are different in size, with t
 * Cluster 2: **14.6%** of customers
 * Cluster 1: **11.8%** of customers
 
-Based on these results, it does appear we do have a skew toward Cluster 0 with Cluster 1 & Cluster 2 being proportionally smaller.  This isn't right or wrong, it is simply showing up pockets of the customer base that are exhibiting different behaviours - and this is *exactly* what we want.
+Based on these results, it does appear we do have a skew toward Cluster 0 with Cluster 1 & Cluster 2 being proportionally smaller.  This isn't right or wrong, it is simply showing up pockets of the customer base that are exhibiting different behaviors - and this is *exactly* what we want.
 
 <br>
 ##### Cluster Attributes
 
-To understand what these different behaviours or characteristics are, we can look to analyse the attributes of each cluster, in terms of the variables we fed into the k-means algorithm.
+To understand what these different behaviors or characteristics are, we can look to analyse the attributes of each cluster, in terms of the variables we fed into the k-means algorithm.
 
 <br>
 ```python
@@ -352,7 +352,7 @@ ___
 <br>
 # Application <a name="kmeans-application"></a>
 
-Even those this is a simple solution, based upon high level product areas it will help leaders in the business, and category managers gain a clearer understanding of the customer base.
+Even though this is a simple solution, based upon high level product areas it will help leaders in the business, and category managers gain a clearer understanding of the customer base.
 
 Tracking these clusters over time would allow the client to more quickly react to dietary trends, and adjust their messaging and inventory accordingly.
 
