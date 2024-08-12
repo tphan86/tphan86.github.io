@@ -38,7 +38,7 @@ Based upon our work for them using a Convolutional Neural Network, they want to 
 <br>
 ### Actions <a name="overview-actions"></a>
 
-Here we implement the pre-trained VGG16 network. Instead of the final MaxPooling layer, we we add in a **Global Average Pooling Layer** at the end of the VGG16 architecture meaning the output of the network will be a single vector of numeric information rather than many arrays.  We use "feature vector" to compare image similarity.
+Here we implement the pre-trained VGG16 network. Instead of the final MaxPooling layer, we add in a **Global Average Pooling Layer** at the end of the VGG16 architecture meaning the output of the network will be a single vector of numeric information rather than many arrays.  We use "feature vector" to compare image similarity.
 
 We pre-process our 300 base-set images, and then pass them through the VGG16 network to extract their feature vectors.  We store these in an object for use when a search image is fed in.
 
@@ -104,7 +104,7 @@ For image based tasks this often means using all the the *pre-learned* features 
 
 The hope is, that the features which have already been learned will be good enough to differentiate between our new classes, and we’ll save a whole lot of training time (and be able to utilise a network architecture that has potentially already been optimised).
 
-For our Fruit Classification task we will be utilising a famous network known as **VGG16**.  This was designed back in 2014, but even by todays standards is a fairly heft network.  It was trained on the famous *ImageNet* dataset, with over a million images across one thousand different image classes. Everything from goldfish to cauliflowers to bottles of wine, to scuba divers!
+For our Fruit Classification task we will be utilising a famous network known as **VGG16**.  This was designed back in 2014, but even by today's standards is still a fairly hefty network.  It was trained on the famous *ImageNet* dataset, with over a million images across one thousand different image classes. Everything from goldfish to cauliflowers to bottles of wine, to scuba divers!
 
 <br>
 ![alt text](/img/posts/vgg16-architecture.png "VGG16 Architecture")
@@ -119,7 +119,7 @@ All the hard work has been done, we just want to "transfer" those "learnings" to
 <br>
 #### Nuanced Application
 
-When using Transfer Learning for image classification tasks, we often import the architecture up to final Max Pooling layer, prior to flattening & the Dense Layers & Output Layer.  We use the frozen parameter values from the bottom of the network, and then get instead of the final Max Pooling layer
+When using Transfer Learning for image classification tasks, we often import the architecture up to final Max Pooling layer, prior to flattening & the Dense Layers & Output Layer.  We use the frozen parameter values from the earlier layers of the network instead of those from the final Max Pooling layer.
 
 With this approach, the final MaxPooling layer will be in the form of a number of pooled feature maps.  For our task here however, we don't want that. We instead want a *single set* of numbers to represent these features and thus we add in a **Global Average Pooling Layer** at the end of the VGG16 architecture meaning the output of the network will be a single array of numeric information rather than many arrays.
 
