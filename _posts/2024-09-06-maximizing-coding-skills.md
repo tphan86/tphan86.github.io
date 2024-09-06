@@ -5,9 +5,6 @@ image: "/posts/coding-skills-title-img.png"
 tags: [Coding Skills, Machine Learning, Regression]
 ---
 
-<br>
-
-
 ### Introduction 
 
 Transitioning into software development later in life has been quite a journey for me. Often, I find myself thinking back on the different paths I could’ve taken to learn how to code. If you’re at a similar crossroads, wondering how to navigate this ever-changing field, you’re not alone.
