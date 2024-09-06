@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Maximizing your coding skills: Insights from the 2024 Stack Overflow Survey
+title: "Maximizing your coding skills: Insights from the 2024 Stack Overflow Survey"
 image: "/posts/coding-skills-title-img.png"
 tags: [Coding Skills, Machine Learning, Regression]
 ---
