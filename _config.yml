@@ -9,7 +9,7 @@ plugins:
 #-------------------------------
 # General Site Settings
 title: Tuan Phan
-description: "Hello, my name is Tuan Phan, and I am a Data Scientist. My portfolio showcases a selection of recent projects, each highlighting significant business impact. I invite you to explore my GitHub and LinkedIn profiles or download my resume using the links provided below."
+description: "Hello, my name is Tuan Phan, and I am an Applied Mathematician as well as a Data Scientist. My portfolio showcases a selection of recent projects, each highlighting significant business impact. I invite you to explore my GitHub and LinkedIn profiles or download my resume using the links provided below."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
